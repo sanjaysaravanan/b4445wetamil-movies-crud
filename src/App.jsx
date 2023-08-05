@@ -20,8 +20,10 @@ function App() {
     <Provider store={store}>
       <BrowserRouter>
         <Routes>
+          {/* Public Pages */}
           <Route index element={<Home />} />
           <Route path="login" element={<Login />} />
+          {/* Protected/Private for user of the application */}
           <Route path="counter" element={<ProtectedPage element={<Counter />} />} />
           <Route path="account" element={<ProtectedPage element={<UserInfo />} />} />
         </Routes>

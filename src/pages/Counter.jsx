@@ -1,10 +1,11 @@
+// eslint-disable-next-line no-unused-vars
 import { useDispatch, useSelector } from "react-redux";
 
 const Counter = () => {
 
   const dispatch = useDispatch();
 
-  const counterReducer = useSelector(state => state.counterReducer)
+  const counterReducer = useSelector(state => state.counterReducer);
 
   const decCounter = () => {
     dispatch({ type: 'dec_counter' });
