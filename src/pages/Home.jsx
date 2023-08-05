@@ -3,9 +3,7 @@ import { Link } from "react-router-dom";
 
 
 const Home = () => {
-
   const dispatch = useDispatch();
-
   const { isLoggedIn = false, userDetails = {} } = useSelector((state) => state.loginReducer || {});
 
   if (isLoggedIn) {
